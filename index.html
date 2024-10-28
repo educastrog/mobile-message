@@ -45,6 +45,11 @@
                 console.log('Método Android showToast no disponible');
             }
         });
+
+        // Suscribirse a los mensajes enviados con window.postMessage
+        window.addEventListener('message', function(event) {
+            console.log('Mensaje recibido:', event.data);
+        });
     </script>
 </body>
 </html>
