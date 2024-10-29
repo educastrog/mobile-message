@@ -40,7 +40,8 @@
 
         document.getElementById('androidMethodButton').addEventListener('click', function() {
             if (window.Android && typeof window.Android.showToast === 'function') {
-                window.Android.showToast(toast);
+                window.Android.showToast('window');
+                Android.showToast('Android');
             } else {
                 console.log('Método Android showToast no disponible');
             }
